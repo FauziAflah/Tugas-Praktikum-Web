@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian</title>
+</head>
+<body>
+    <header style="padding: 20px 0px 20px 0px" class="header">
+        <a href="#" style="margin: 0px 125px 0px 125px; color:black">Home</a>   
+        <a href="#" style="margin: 0px 125px 0px 125px; color:black">Generote Link</a>
+        <a href="#" style="margin: 0px 125px 0px 125px; color:black">Transaction History</a>
+        <a href="#" style="margin: 0px 125px 0px 125px; color:black">Policy</a>
+        <a href="#" style="margin: 0px 125px 0px 125px; color:black">Logout</a>
+        <hr>
+    </header>
+    <main class="content" style="display: flex; align-items:center; justify-content:center;">
+        <!--sub content-->
+        <div class="sub-content" style="display: flex; min-width:50vw; min-height:50vh; justify-content:space-between; margin:13vh;">
+        <!--bagian kiri-->
+        <div class="left" style="display: flex; flex-direction:column; background-color:#B6FFFA; width:25vw; border-radius:1rem 0 0 1rem; align-items:center">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" width="200" style="border-radius: 200; margin: 15px 30px;">
+            <form action="upload">
+                <br>
+                <label style="text-align: center; margin: 15px 30px;" for="file">Upload Photo Profile</label><br /><br />
+                <input style="margin: 5px 5px;" type="file" />
+            </form>
+        </div>
+        <!--bagian kanan-->
+        <div class="right" style="background-color:#98E4FF; width:25vw; border-radius:0 1rem 1 rem 0">
+            <br>
+            <form action="hasil.html">
+                <table style="margin: 15px 30px;">
+                    <tr>
+                        <td>Nama :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Deskripsi">Deskripsi :</label></td>
+                        <td><textarea name="" id="" cols="21" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Account Number</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank</td>
+                        <td><select name="bank" id="bank">
+                            <option value="BTN">BTN</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BNI">BNI</option>
+                            <option value="Mandiri">Mandiri</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Account Holder</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Transaction</td>
+                        <td><input type="number" style="width: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red;"> <input type="checkbox"> <span style="font-size: 10px;">Send To Mobile Phone</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red;"> <input type="checkbox"><span style="font-size: 10px;">Send To Email</span></td>
+                    </tr>
+                    <tr>
+                        <td>Send To Mobile</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Send To Email</td>
+                        <td><input type="email"></td>
+                    </tr>
+                </table>
+                <button style="margin: 100px 100px; background:#687EFF; border:none; box-shadow:5px 5px"> <a href="/hasil.html" style="text-decoration: none; color:black">Generate Nbr Link</a></button>
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
