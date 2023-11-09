@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box 3</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .row1, .row2 {
+            display: flex;
+            gap: 20px;
+        }
+        .row1-yellow {
+            background-color: yellow;
+            height: 100px;
+            flex-grow: 1;
+        }
+        .row1-red {
+            background-color: red;
+            height: 100px;
+            flex-grow: 4;
+        }
+        .row2-green {
+            background-color: green;
+            height: 300px;
+            flex-grow: 1;
+        }
+        .row2-grey {
+            background-color: grey;
+            height: 300px;
+            flex-grow: 3;
+        }
+        .row2-aqua {
+            background-color: aqua;
+            height: 300px;
+            flex-grow: 1;
+        }
+        .row3-blue {
+            background-color: blue;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--baris 1-->
+        <div class="row1">
+            <div class="row1-yellow"></div>
+            <div class="row1-red"></div>
+        </div>
+        <br>
+        <!--baris 2-->
+        <div class="row2">
+            <div class="row2-green"></div>
+            <div class="row2-grey"></div>
+            <div class="row2-aqua"></div>
+        </div>
+        <br>
+        <!--baris 3-->
+        <div class="row3-blue"></div>
+    </div>
+</body>
+</html>
