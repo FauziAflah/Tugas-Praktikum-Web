@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung 2 Bilangan</title>
+</head>
+<body>
+    <label for="bilangan1"></label>
+    <input type="number" name="bilangan1" id="bilangan1" onchange="hasilBilangan()"/>
+
+    <p>+</p>
+
+    <label for="bilangan2"></label>
+    <input type="number" name="bilangan2" id="bilangan2" onchange="hasilBilangan()"/>
+
+    <p>Total :<span id="rumusbilangan"></span></p>
+
+    <script>
+        function hasilBilangan() {
+            let bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            let bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            let rumusBilangan = bilangan1 + bilangan2;
+            document.getElementById("rumusbilangan").innerHTML = rumusBilangan;
+        }
+    </script>
+</body>
+</html>
